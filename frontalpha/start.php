@@ -9,7 +9,7 @@ $capture = array(
 $capture = json_encode($capture);
 
 $connection = curl_init();
-curl_setopt($connection, CURLOPT_URL, "https://afsaccess4.njit.edu/~rv356/CS490alpha/send.php");
+curl_setopt($connection, CURLOPT_URL, "https://afsaccess4.njit.edu/~rv356/CS490alpha/middlealpha.php");
 curl_setopt($connection, CURLOPT_POSTFIELDS, $capture );
 curl_setopt($connection, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
 curl_setopt($connection, CURLOPT_RETURNTRANSFER, true);
